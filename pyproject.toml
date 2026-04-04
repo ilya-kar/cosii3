@@ -1,0 +1,43 @@
+[project]
+name = "app"
+version = "0.1"
+requires-python = ">=3.13"
+
+authors = [
+    { name = "dispronesson", email = "dispronesson@mail.ru" },
+]
+
+dependencies = [
+    "jupyter>=1.1.1",
+    "librosa>=0.11.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "scipy>=1.17.0",
+    "sounddevice>=0.5.5",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.14",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+indent-width = 4
+
+exclude = [
+    ".venv/",
+]
+
+select = [
+    "E",
+    "F",
+    "I",
+    "B",
+]
+
+ignore = [
+    "E203",
+    "E501",
+]
