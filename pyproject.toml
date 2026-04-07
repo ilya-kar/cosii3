@@ -1,25 +1,22 @@
 [project]
 name = "app"
 version = "0.1"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 
 authors = [
     { name = "dispronesson", email = "dispronesson@mail.ru" },
 ]
-
 dependencies = [
     "jupyter>=1.1.1",
     "librosa>=0.11.0",
     "matplotlib>=3.10.8",
-    "numpy>=2.4.2",
-    "scipy>=1.17.0",
+    "numpy>=2.2.6",
+    "onnxruntime>=1.24.3",
+    "pesq>=0.0.4",
     "sounddevice>=0.5.5",
+    "speechmos>=0.0.1.1",
 ]
 
-[dependency-groups]
-dev = [
-    "ruff>=0.14.14",
-]
 
 [tool.ruff]
 line-length = 88

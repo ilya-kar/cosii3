@@ -1,0 +1,36 @@
+[project]
+name = "app"
+version = "0.1"
+requires-python = ">=3.10"
+
+authors = [
+    { name = "dispronesson", email = "dispronesson@mail.ru" },
+]
+dependencies = [
+    "deepfilternet>=0.5.6",
+    "jupyter>=1.1.1",
+    "nisqa>=2.0.post2",
+    "torchaudio>=2.11.0",
+]
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+indent-width = 4
+
+exclude = [
+    ".venv/",
+]
+
+select = [
+    "E",
+    "F",
+    "I",
+    "B",
+]
+
+ignore = [
+    "E203",
+    "E501",
+]
